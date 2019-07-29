@@ -1,10 +1,12 @@
 <template>
-	<div>前言</div>
+	<div>
+		xcx-path
+	</div>
 </template>
 
 <script>
 	export default{
-		name:"introduce"
+		name:"xcx-path"
 	}
 </script>
 

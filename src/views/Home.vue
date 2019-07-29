@@ -4,11 +4,13 @@
 			<header-nav></header-nav>
 		</div>
 		<div class="content-contianer">
-			<div class="sidebar-nav-container">
+			<div class="sidebar-nav-container" v-if="showOnce">
 				<sidebar-nav></sidebar-nav>
 			</div>
 			<div class="router-view-container">
-				<router-view></router-view>
+				<el-scrollbar style="height: 100%;">
+					<router-view style="padding: 20px;"></router-view>
+				</el-scrollbar>
 			</div>
 		</div>
 	</div>
@@ -22,29 +24,43 @@
 		components: {
 			headerNav,
 			sidebarNav
+		},
+		computed:{
+			showOnce:function(){
+				return this.$store.getters.triggerNavListKey
+			}
 		}
 	}
 </script>
+
 <style scoped>
-	.home{
+	.home {
 		width: 100%;
 		height: 100%;
 	}
-	.home .content-contianer{
-		height:calc(100% - 62px) ;
+
+	.home .content-contianer {
+		width: 100%;
+		height: calc(100% - 62px);
 		padding-top: 3px;
 		display: flex;
 		box-sizing: border-box;
 	}
-	.content-contianer.sidebar-nav-container{
+
+	.content-contianer.sidebar-nav-container {
 		max-width: 200px;
 		height: 100%;
-		
 	}
-	.content-contianer .router-view-container{
+
+	.content-contianer .router-view-container {
 		flex: 1;
+		width: 100%;
 		height: 100%;
 		box-sizing: border-box;
-		padding: 20px;
+		min-width: 880px;
+		overflow: hidden;
+	}
+	.home >>> .el-scrollbar__wrap {
+		overflow-x: hidden !important;
 	}
 </style>

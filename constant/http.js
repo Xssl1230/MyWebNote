@@ -17,11 +17,7 @@ function endLoading() {    //使用Element loading-close 方法
     loading.close()
 }
 
-axios.defaults.baseURL = "http://ispserv.ga.hainan.gov.cn";
-// axios.defaults.baseURL = "http://74.6.53.125:8080";
-axios.defaults.withCredentials=true; //携带cookie信息
-// process.env.NODE_ENV === "production" ? "http://mobile.jjzx.gov.cn" : "http://api.jjzx.gov.cn";
-// axios.defaults.baseURL = baseUrl;
+axios.defaults.baseURL = 'https://wd5320055066edbeyc.wilddogio.com'
 
 // 添加请求拦截器
 axios.interceptors.request.use(

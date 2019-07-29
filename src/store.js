@@ -5,14 +5,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-	triggerNavList:localStorage.nav ? localStorage.getItem("nav") : 1
+	triggerNavListKey:localStorage.nav ? localStorage.getItem("nav") : null
   },
   getters:{
-	triggerNavList:state=>state.triggerNavList
+	triggerNavListKey:state=>state.triggerNavListKey
   },
   mutations: {
-	setNavList(state,data){
-		state.triggerNavList=data
+	setNavListKey(state,data){
+		state.triggerNavListKey=data
 		localStorage.setItem("nav",data)
 	}
   }
