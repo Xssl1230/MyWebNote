@@ -7,14 +7,13 @@
 		</div>
 		
 		<div class="blog-item" v-for="(value, key, index) in blogs" v-show="!showReadAll">
-			<p>{{value.name}}</p>
+			<p class="blog-title" @click="readAll(value.content)">{{value.name}}</p>
 			<div class="item-content">
 				<p>{{value.desc}}<el-button type="text" class="btn" @click="readAll(value.content)">阅读全文</el-button></p>
-				
 			</div>
 			<div class="item-footer">
-				<p>作者：{{value.identity}}</p>
-				<p class="time">发布日期：{{value.create_time}}</p>
+				<span>作者：{{value.identity}}</span>
+				<span class="time">发布日期：{{value.create_time}}</span>
 			</div>
 		</div>
 	</div>
@@ -58,7 +57,8 @@
 
 <style scoped>
 	.item-footer {
-		display: flex;
+		/* display: flex; */
+		text-align: right;
 		/* justify-content: space-between; */
 	}
 
@@ -69,5 +69,12 @@
 	.blog-item {
 		padding: 16px 0;
 		border-bottom: 1px solid #dbdbdb;
+	}
+	.blog-title{
+		padding: 10px 0;
+		color: #390;
+	}
+	.blog-title:hover{
+		color: red;
 	}
 </style>

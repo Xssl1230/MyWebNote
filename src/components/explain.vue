@@ -35,13 +35,16 @@
 <style scoped>
 	.menu{
 		padding:20px 0 ;
+		margin: 10px 0;
+		border: 1px solid #dbdbdb;
 	}
 	.title{
-		color: #409EFF;
+		color: #000;
 	}
 	.answer{
 		text-indent: 2rem;
 		padding:5px 0;
+		color: rgba(0,0,0,.75);
 	}
 	.mouse{
 		padding: 10px 0;
@@ -58,5 +61,5 @@
 		text-indent: 4rem;
 		padding: 6px 0;
 	}
-	.subtitle{color: MediumBlue;}
+	.subtitle{color: #000;padding: 5px 0 8px;}
 </style>

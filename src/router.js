@@ -23,6 +23,8 @@ const router = new Router({
 		  {path:"/noob/start",name:"noob-start",component: () => import('@components/noob/start.vue')},
 		  {path:"/noob/path",name:"noob-path",component: () => import('@components/noob/path.vue')},
 		  {path:"/noob/css",name:"noob-css",component: () => import('@components/noob/css.vue')},
+		  {path:"/noob/ts",name:"noob-ts",component: () => import('@components/noob/ts.vue')},
+		  {path:"/noob/js",name:"noob-js",component: () => import('@components/noob/js.vue')},
 		  // vue
 		  {path:"/vue/started",name:"vue-started",component: () => import('@components/vue/started.vue')},
 		  {path:"/vue/path",name:"vue-path",component: () => import('@components/vue/path.vue')},

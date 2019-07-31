@@ -47,7 +47,7 @@
 	}
 
 	.header .logo {
-		/* min-width: 600px; */
+		min-width: 600px;
 		display: flex;
 		align-items: center;
 	}

@@ -30,6 +30,13 @@
 							"justify-content: space-between;  //横轴位置，两边",
 							"align-items: center;  //纵轴位置，居中"
 						]
+					},
+					{
+						id:"",
+						title:"pc站整体缩放",
+						answers:[
+							"<meta name='viewport' content='width=device-width, initial-scale=0,user-scalable=no,maximum-scale=1.0'  //移动端展示缩放后"
+						]
 					}
 				]
 			}

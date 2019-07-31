@@ -42,11 +42,11 @@
 								router: '/noob/css'
 							},
 							{
-								title: "JS",
+								title: "JavaScript",
 								router: '/noob/js'
 							},
 							{
-								title: "TS",
+								title: "TypeScript",
 								router: '/noob/ts'
 							},
 						]
